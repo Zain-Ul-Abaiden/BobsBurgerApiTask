@@ -1,9 +1,9 @@
 <template>
   <div>
-  <ul class="divide-y divide-gray-200">
+  <ul>
     <li v-for="(u,id) in user" :key="id">
       <div class="px-4 py-4 flex">
-        <img class="rounded-full h-10 w-10" :src="u.image" alt="" />
+        <img class="rounded-full h-20 w-20" :src="u.image" :alt="u.name + 'Images'" />
         <div class="ml-10">
           <p class="text-gray-800"> User Id: {{ u.id }}</p>
           <p class="text-gray-800">User Name: {{ u.name }}</p>
